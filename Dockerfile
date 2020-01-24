@@ -28,7 +28,8 @@ RUN apt-get install -y \
     xfonts-75dpi \
     xfonts-base \
     wget \
-    libjpeg-turbo8
+    libjpeg-turbo8 \
+    mysql-client
 
 # Install wkhtmktopdf    
 RUN wget https://downloads.wkhtmltopdf.org/0.12/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb

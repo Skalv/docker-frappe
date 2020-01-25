@@ -65,6 +65,6 @@ RUN sudo pip3 install -e ./bench
 
 # Install frappe
 ENV frappeBranch=version-12
-RUN bench init --frappe-branch $frappeBranch frappe-bench
-RUN pip3 install -e ./frappe-bench/apps/frappe/
+RUN bench init --frappe-branch $frappeBranch --python /usr/bin/python3 frappe-bench
+RUN .env/bin/pip3 install -e ./frappe-bench/apps/frappe/
 
